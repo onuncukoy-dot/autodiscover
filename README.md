@@ -12,4 +12,9 @@ while read sub ;do if host "$sub.example.com" &> /dev/null/ ; then echo "$sub.ex
 
 ```
 
+```
+ grep --color=ayways  -iEoh 'comp=([a-zA-Z]+)&' | sed 's/comp=//g'|sed 's/\&//g' | sed 's/nodewep//g' 
+ ```
+
+
 
